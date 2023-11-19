@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Container from '@/components/container';
 import { BoxData } from '@/components/boxData';
+import { useSearchParams } from 'next/navigation'
 
 const BoxList: React.FC = () => {
   const [data, setData] = useState<BoxData[]>([]);
@@ -10,7 +11,18 @@ const BoxList: React.FC = () => {
   const [expandedBox, setExpandedBox] = useState<number | null>(null);
   const [subjectFilter, setSubjectFilter] = useState('');
   const [dateFilter, setDateFilter] = useState('');
-  const itemsPerPage = 10;
+  const itemsPerPage = 15;
+  const searchParams = useSearchParams()
+  const sortGradeValue = searchParams.get("matthayom")
+  
+  useEffect(() => {
+    if (sortGradeValue) {
+      const numericValue = parseInt(sortGradeValue, 10);
+      if (!isNaN(numericValue) && numericValue >= 1 && numericValue <= 6) {
+        setSelectedFile("m" + sortGradeValue);
+      }
+    }
+  }, [sortGradeValue]);
   
   type DayMapping = Record<string, string>;
 
