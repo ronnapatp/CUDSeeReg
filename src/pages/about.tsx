@@ -20,8 +20,8 @@ export default function about() {
                 </p>
                 <blockquote>
                 </blockquote>
-                <blockquote className="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 ">
-                    <p className="text-xl italic font-medium leading-relaxed text-gray-900">เว็บไซต์นี้เพียงแสดงข้อมูลเกี่ยวกับการลงทะเบียน การลงทะเบียนจริงต้องทำผ่านระบบ cudreg.com เท่านั้น</p>
+                <blockquote className="p-4 my-4 border-s-4 border-red-300 bg-red-50 ">
+                    <p className="text-xl font-medium leading-relaxed text-gray-900">เว็บไซต์นี้เพียงแสดงข้อมูลเกี่ยวกับการลงทะเบียน การลงทะเบียนจริงต้องทำผ่านระบบ cudreg.com เท่านั้น</p>
                 </blockquote>
                 <p className="indent-12">
                     โดยข้อมูลรายวิชาและตารางเรียนทั้งหมดที่นำมาแสดงในเว็บไซต์นี้มาจากไฟล์ PDF และ Google Docs ที่โรงเรียนส่งให้นักเรียนในช่วงก่อนการลงทะเบียน
