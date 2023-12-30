@@ -1,8 +1,10 @@
 import Container from "@/components/container2"
+import Meta from "@/components/meta"
 
 export default function about() {
     return (
       <Container>
+        <Meta title="เกี่ยวกับเรา" />
         <div className="mt-10">
             <h1 className="text-4xl font-bold">เกี่ยวกับเรา</h1>
             <section className="mt-5 text-xl font-light space-y-5">

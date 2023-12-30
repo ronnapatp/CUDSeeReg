@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Container from '@/components/container';
 import { BoxData } from '@/components/boxData';
 import { useSearchParams } from 'next/navigation'
+import Meta from "@/components/meta"
 
 const BoxList: React.FC = () => {
   const [data, setData] = useState<BoxData[]>([]);
@@ -134,6 +135,7 @@ const BoxList: React.FC = () => {
 
   return (
     <Container>
+      <Meta title="รายวิชาเลือกเสรี" />
      <div className="mb-4 flex flex-wrap items-center mt-5">
         {/* Select box for choosing JSON file */}
         <label className="mr-2 font-bold text-slate-950 text-5xl">ค้นหาวิชาเลือกเสรี</label>
