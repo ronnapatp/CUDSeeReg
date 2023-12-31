@@ -4,7 +4,7 @@ import Meta from "@/components/meta"
 export default function timetable() {
     return (
       <Container>
-        <Meta title="เกี่ยวกับเรา" />
+        <Meta title="ตารางเรียน" />
         <div className="mt-10">
         <label className="mr-2 font-bold text-slate-950 text-5xl">ตารางเรียน</label>
 
