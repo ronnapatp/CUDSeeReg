@@ -6,7 +6,7 @@ This project was created as part of the evaluation in the Design and Technology 
 
 ## CUDSeeReg
 
-This was made because of the problem of registering for additional subjects each semester. It is necessary to view information from the PDF files that the school have given, which is not convenient for viewing on different devices, especially phones. It is not easy to look at the date, time, and description of each subject. The font size is also very small.
+This masterpiece application was created to solve the problem of registering for elective subjects in each semester of CUD students. It is known among the CUD students that viwing elective subject lists from PDF file format is super inconvenient on different devices, especially phones. It is tough to look at the date, time, and description of each subject. The font size is also very small.
 
 All the subjects date and time on the website is from the school's PDF and Google Docs files.
 
