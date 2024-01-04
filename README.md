@@ -10,6 +10,4 @@ This was made because of the problem of registering for additional subjects each
 
 All the subjects date and time on the website is from the school's PDF and Google Docs files.
 
-! The website only displays the details on each subject. The registration process has do be done on _Dash badge_
-
-[![CUDReg](https://img.shields.io/badge/CUDReg-FFC0CB)](https://cudreg.com/) only. !
+! The website only displays the details on each subject. The registration process has do be done on [![CUDReg](https://img.shields.io/badge/CUDReg-FFC0CB)](https://cudreg.com/) only. !
