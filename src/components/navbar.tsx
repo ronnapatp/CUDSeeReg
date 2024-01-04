@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden md:flex space-x-4 text-slate-800">
           <Link href="/">วิชาเลือก</Link>
-          <Link href="/timetable">ตาราเรียน</Link>
+          <Link href="/timetable">ตารางเรียน</Link>
           <Link href="/about">เกี่ยวกับเรา</Link>
         </div>
         <div className="md:hidden">
