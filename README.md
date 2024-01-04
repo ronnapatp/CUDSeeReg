@@ -1,3 +1,5 @@
+<img width="1180" alt="image" src="https://github.com/ronnapatp/CUDSeeReg/assets/91602142/57ae40ce-47e3-42d1-8027-58af14f25bfa">
+
 ## About this project
 
 This project was created as part of the evaluation in the Design and Technology subject, M.3, Chulalongkorn University Demonstration Secondary School.
