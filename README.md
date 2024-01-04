@@ -1,40 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## About this project
 
-First, run the development server:
+This project was created as part of the evaluation in the Design and Technology subject, M.3, Chulalongkorn University Demonstration Secondary School.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## CUDSeeReg
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This was made because of the problem of registering for additional subjects each semester. It is necessary to view information from the PDF files that the school have given, which is not convenient for viewing on different devices, especially phones. It is not easy to look at the date, time, and description of each subject. The font size is also very small.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+All the subjects date and time on the website is from the school's PDF and Google Docs files.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+! The website only displays the details on each subject. The registration process has do be done on _Dash badge_
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![CUDReg](https://img.shields.io/badge/CUDReg-FFC0CB)](https://cudreg.com/) only. !
