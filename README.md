@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## About this project
 
 This project was created as part of the evaluation in the Design and Technology subject, M.3, Chulalongkorn University Demonstration Secondary School.
