@@ -192,7 +192,7 @@ const BoxList: React.FC = () => {
         <div key={box.order} className="border p-4 mb-4">
           <div className="flex justify-between items-center mb-2">
             <div>
-              <p className="text-sm text-slate-500">{box.code} - {box.credit} หน่วยกิจ</p>
+              <p className="text-sm text-slate-500">{box.code} - {box.credit} หน่วยกิต</p>
               <p className="text-2xl font-bold">{box.name}</p>
             </div>
             <button
