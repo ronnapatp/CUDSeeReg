@@ -1,4 +1,4 @@
-<img width="590" alt="image" src="https://github.com/ronnapatp/CUDSeeReg/assets/91602142/57ae40ce-47e3-42d1-8027-58af14f25bfa">
+![cudseereg com_(4K)](https://github.com/ronnapatp/CUDSeeReg/assets/91602142/140317d8-2f9e-4b00-bedd-7d6b658e63b2)
 
 ## About this project
 
