@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
           <Link href="/">CUDSeeReg</Link>
         </div>
         <div className="hidden md:flex space-x-4 text-slate-800">
+          <Link href="https://cudreg.com/cuds">CUDReg</Link>
           <Link href="/">วิชาเลือก</Link>
           <Link href="/timetable">ตารางเรียน</Link>
           <Link href="/about">เกี่ยวกับเรา</Link>
@@ -38,6 +39,7 @@ const Navbar: React.FC = () => {
           } absolute top-10 right-0 bg-white text-slate-800 w-full mt-0 rounded-md shadow-md`}
         >
           <div className="flex flex-col items-end p-6 mr-2">
+            <Link href="https://cudreg.com/cuds">CUDReg</Link>
             <Link href="/">วิชาเลือก</Link>
             <Link href="/timetable">ตารางเรียน</Link>
             <Link href="/about">เกี่ยวกับเรา</Link>
