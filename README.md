@@ -10,4 +10,4 @@ This masterpiece application was created to solve the problem of registering for
 
 All the subjects date and time on the website is from the school's PDF and Google Docs files.
 
-! The website only displays the details on each subject. The registration process has do be done on [![CUDReg](https://img.shields.io/badge/CUDReg-FFC0CB)](https://cudreg.com/) only. !
+! The website only displays the details on each subject. The registration process has to be done on [![CUDReg](https://img.shields.io/badge/CUDReg-FFC0CB)](https://cudreg.com/) only. !
