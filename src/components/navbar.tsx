@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           <Link href="/">CUDSeeReg</Link>
         </div>
         <div className="hidden md:flex space-x-4 text-slate-800">
-          <Link href="https://cudreg.com/cuds" target="_blank" style="color:LightPink;">
+          <Link href="https://cudreg.com/cuds" target="_blank">
             <img src="public/cudreg-logo.png" />
           </Link>
           <Link href="/">วิชาเลือก</Link>
