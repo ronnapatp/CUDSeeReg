@@ -167,8 +167,13 @@ const BoxList: React.FC = () => {
             className="p-2 border rounded mb-2  sm:mr-2 sm:mb-0 sm:flex-1"
           >
             <option value="">ทุกวิชา</option>
-            <option value="subject1">Subject 1</option>
-            <option value="subject2">Subject 2</option>
+            <option value="ค">คณิตศาสตร์</option>
+            <option value="ว">วิทยาศาสตร์</option>
+            <option value="ส">สังคมศึกษา</option>
+            <option value="พ">พละศึกษา</option>
+            <option value="ง">การงานอาชีพ</option>
+            <option value="ท">ภาษาไทย</option>
+            <option value="ภ">ภาษาต่างประเทศ</option>
           </select>
 
           <select
