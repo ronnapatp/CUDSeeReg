@@ -1,4 +1,4 @@
-![cudseereg com_(4K)](https://github.com/ronnapatp/CUDSeeReg/assets/91602142/140317d8-2f9e-4b00-bedd-7d6b658e63b2)
+![cudseereg com_(4K)](https://github.com/ronnapatp/CUDSeeReg/assets/91602142/12db6b99-0814-43d9-ad25-f986cdb5f9ad)
 
 ## About this project
 
