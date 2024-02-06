@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden md:flex space-x-4 text-slate-800">
           <Link href="https://cudreg.com/cuds" target="_blank">
-            <img src="public/cudreg-logo.png" />
+            <img src="/cudreg-logo.png" />
           </Link>
           <Link href="/">วิชาเลือก</Link>
           <Link href="/timetable">ตารางเรียน</Link>
