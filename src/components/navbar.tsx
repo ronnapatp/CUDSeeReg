@@ -24,6 +24,7 @@ const Navbar: React.FC = () => {
             <img src="/cudreg-logo.png" />
           </Link>
           <Link href="/">วิชาเลือก</Link>
+          <Link href="/usage">วิธีใช้</Link>
           <Link href="/timetable">ตารางเรียน</Link>
           <Link href="/about">เกี่ยวกับเรา</Link>
         </div>
