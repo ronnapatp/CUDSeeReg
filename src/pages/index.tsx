@@ -99,19 +99,36 @@ const BoxList: React.FC = () => {
     return thaiDay === day;
   }
   
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`https://raw.githubusercontent.com/ronnapatp/cudElective/main/data/json/${selectedFile}.json`);
-        const jsonData: BoxData[] = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await fetch(`https://raw.githubusercontent.com/ronnapatp/cudElective/main/data/json/${selectedFile}.json`);
+      let jsonData: BoxData[] = await response.json();
 
-    fetchData();
-  }, [selectedFile]);
+      // Sort the data by subject (based on the first character of the code)
+      jsonData.sort((a, b) => {
+        const subjectA = a.code.charAt(0);
+        const subjectB = b.code.charAt(0);
+        
+        if (subjectA < subjectB) {
+          return -1;
+        }
+        if (subjectA > subjectB) {
+          return 1;
+        }
+        return 0;
+      });
+
+      setData(jsonData);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  fetchData();
+}, [selectedFile]);
+
+
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -123,7 +140,17 @@ const BoxList: React.FC = () => {
       shouldIncludeBox(box)
   );
 
-  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+  const filteredBySubject = subjectFilter
+  ? filteredData.filter((box) => box.code.startsWith(subjectFilter))
+  : filteredData;
+
+const currentItems = filteredBySubject.slice(indexOfFirstItem, indexOfLastItem);
+
+
+  const numberOfItems = filteredBySubject.length;
+  const numberOfPages = Math.ceil(numberOfItems / itemsPerPage);
+
+  const pageNumbers = Array.from({ length: numberOfPages }, (_, index) => index + 1);
 
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
@@ -132,6 +159,8 @@ const BoxList: React.FC = () => {
   const toggleExpandedBox = (order: number) => {
     setExpandedBox((prev) => (prev === order ? null : order));
   };
+
+  
 
   return (
     <Container>
