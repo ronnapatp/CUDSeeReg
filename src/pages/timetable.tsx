@@ -1,102 +1,60 @@
-import Container from "@/components/container"
-import Meta from "@/components/meta"
+import { useState } from 'react';
+import Container from "@/components/container";
+import Meta from "@/components/meta";
 
-export default function timetable() {
-    return (
-      <Container>
-        <Meta title="ตารางเรียน" />
-        <div className="mt-10">
+export default function Timetable() {
+  const [selectedTable, setSelectedTable] = useState('1epmil'); // Initial selection
+
+  const handleTableSelection = (event: any) => {
+    setSelectedTable(event.target.value);
+  };
+
+  // Import the selected table component dynamically
+  const TableComponent = require(`@/components/timetable/${selectedTable}`).default;
+
+  return (
+    <Container>
+      <Meta title="ตารางเรียน" />
+      <div className="mt-10">
         <label className="mr-2 font-bold text-slate-950 text-5xl">ตารางเรียน</label>
-
-          <div className="overflow-x-auto">
-            <table className="table-auto border border-gray-300 min-w-full h-96">
-              <thead>
-                <tr>
-                  <th className="px-4 py-2 border border-gray-300" colSpan={2}>วัน/เวลา</th>
-                  <th className="px-4 py-2 border border-gray-300">08:30-09:20</th>
-                  <th className="px-4 py-2 border border-gray-300">09:20-10:10</th>
-                  <th className="px-4 py-2 border border-gray-300">10:10-10:20</th>
-                  <th className="px-4 py-2 border border-gray-300">10:20-11:10</th>
-                  <th className="px-4 py-2 border border-gray-300">11:10-12:00</th>
-                  <th className="px-4 py-2 border border-gray-300">12:00-12:50</th>
-                  <th className="px-4 py-2 border border-gray-300">12:50-13:40</th>
-                  <th className="px-4 py-2 border border-gray-300">13:40-13:50</th>
-                  <th className="px-4 py-2 border border-gray-300">13:50-14:40</th>
-                  <th className="px-4 py-2 border border-gray-300">14:40-15:30</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="px-4 py-2 border border-gray-300 bg-yellow-300 font-bold">จันทร์</td>
-                  <td colSpan={2} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border border-gray-300 bg-pink-300 font-bold">อังคาร</td>
-                  <td colSpan={2} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={2} className="px-4 py-2 border border-gray-300 bg-blue-200 text-blue-800 font-bold">BC</td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border border-gray-300 bg-green-500 font-bold">พุธ</td>
-                  <td colSpan={2} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border border-gray-300 bg-orange-400 font-bold">พฤหัสบดี</td>
-                  <td colSpan={2} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border border-gray-300 bg-blue-500 font-bold">ศุกร์</td>
-                  <td colSpan={2} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                  <td colSpan={1} className="px-4 py-2 border border-gray-300"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-
+        
+        {/* Table selection dropdown */}
+        <div className="mt-4">
+          <label htmlFor="tableSelect" className="mr-2">เลือกตาราง:</label>
+          <select id="tableSelect" value={selectedTable} onChange={handleTableSelection} className="px-2 py-1 border border-gray-300 rounded">
+            <option value="1epmil">ม.1 EP ช่วงรด.</option>
+            <option value="1epnotmil">ม.1 EP ช่วงปกติ</option>
+            <option value="1normil">ม.1 ธรรมดา ช่วงรด.</option>
+            <option value="1nornotmil">ม.1 ธรรมดา ช่วงปกติ</option>
+            <option value="2epmil">ม.2 EP ช่วงรด.</option>
+            <option value="2epnotmil">ม.2 EP ช่วงปกติ</option>
+            <option value="2normil">ม.2 ธรรมดา ช่วงรด.</option>
+            <option value="2nornotmil">ม.2 ธรรมดา ช่วงปกติ</option>
+            <option value="3epmil">ม.3 EP ช่วงรด.</option>
+            <option value="3epnotmil">ม.3 EP ช่วงปกติ</option>
+            <option value="3normil">ม.3 ธรรมดา ช่วงรด.</option>
+            <option value="3nornotmil">ม.3 ธรรมดา ช่วงปกติ</option>
+            <option value="4epmil">ม.4 EP ช่วงรด.</option>
+            <option value="4epnotmil">ม.4 EP ช่วงปกติ</option>
+            <option value="4normil">ม.4 ธรรมดา ช่วงรด.</option>
+            <option value="4nornotmil">ม.4 ธรรมดา ช่วงปกติ</option>
+            <option value="5epmil">ม.5 EP ช่วงรด.</option>
+            <option value="5epnotmil">ม.5 EP ช่วงปกติ</option>
+            <option value="5normil">ม.5 ธรรมดา ช่วงรด.</option>
+            <option value="5nornotmil">ม.5 ธรรมดา ช่วงปกติ</option>
+            <option value="6epmil">ม.6 EP ช่วงรด.</option>
+            <option value="6epnotmil">ม.6 EP ช่วงปกติ</option>
+            <option value="6normil">ม.6 ธรรมดา ช่วงรด.</option>
+            <option value="6nornotmil">ม.6 ธรรมดา ช่วงปกติ</option>
+          </select>
         </div>
-      </Container>
-    )
-  }
-  
+
+        {/* Display the selected table */}
+        <div className="overflow-x-auto mt-4">
+          <TableComponent />
+        </div>
+
+      </div>
+    </Container>
+  )
+}
