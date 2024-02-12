@@ -3,7 +3,7 @@ import Container from "@/components/container";
 import Meta from "@/components/meta";
 
 export default function Timetable() {
-  const [selectedTable, setSelectedTable] = useState('1epmil'); // Initial selection
+  const [selectedTable, setSelectedTable] = useState('1ep'); // Initial selection
 
   const handleTableSelection = (event: any) => {
     setSelectedTable(event.target.value);
@@ -22,18 +22,12 @@ export default function Timetable() {
         <div className="mt-4">
           <label htmlFor="tableSelect" className="mr-2">เลือกตาราง:</label>
           <select id="tableSelect" value={selectedTable} onChange={handleTableSelection} className="px-2 py-1 border border-gray-300 rounded">
-            <option value="1epmil">ม.1 EP ช่วงรด.</option>
-            <option value="1epnotmil">ม.1 EP ช่วงปกติ</option>
-            <option value="1normil">ม.1 ธรรมดา ช่วงรด.</option>
-            <option value="1nornotmil">ม.1 ธรรมดา ช่วงปกติ</option>
-            <option value="2epmil">ม.2 EP ช่วงรด.</option>
-            <option value="2epnotmil">ม.2 EP ช่วงปกติ</option>
-            <option value="2normil">ม.2 ธรรมดา ช่วงรด.</option>
-            <option value="2nornotmil">ม.2 ธรรมดา ช่วงปกติ</option>
-            <option value="3epmil">ม.3 EP ช่วงรด.</option>
-            <option value="3epnotmil">ม.3 EP ช่วงปกติ</option>
-            <option value="3normil">ม.3 ธรรมดา ช่วงรด.</option>
-            <option value="3nornotmil">ม.3 ธรรมดา ช่วงปกติ</option>
+            <option value="1ep">ม.1 EP</option>
+            <option value="1nor">ม.1 ธรรมดา</option>
+            <option value="2ep">ม.2 EP</option>
+            <option value="2nor">ม.2 ธรรมดา</option>
+            <option value="3ep">ม.3 EP</option>
+            <option value="3nor">ม.3 ธรรมดา</option>
             <option value="4epmil">ม.4 EP ช่วงรด.</option>
             <option value="4epnotmil">ม.4 EP ช่วงปกติ</option>
             <option value="4normil">ม.4 ธรรมดา ช่วงรด.</option>
