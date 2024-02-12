@@ -37,9 +37,7 @@ export default function Timetable() {
             <option value="4nornotmilsci">ม.4 ธรรมดา ช่วงปกติ (วิทย์)</option>
             <option value="4nornotmilart">ม.4 ธรรมดา ช่วงปกติ (ศิลป์)</option>
             <option value="5epmilsci">ม.5 EP ช่วงรด. (วิทย์)</option>
-            <option value="5epmilart">ม.5 EP ช่วงรด. (ศิลป์)</option>
             <option value="5epnotmilsci">ม.5 EP ช่วงปกติ (วิทย์)</option>
-            <option value="5epnotmilart">ม.5 EP ช่วงปกติ (ศิลป์)</option>
             <option value="5normilsci">ม.5 ธรรมดา ช่วงรด. (วิทย์)</option>
             <option value="5normilart">ม.5 ธรรมดา ช่วงรด. (ศิลป์)</option>
             <option value="5nornotmilsci">ม.5 ธรรมดา ช่วงปกติ (วิทย์)</option>
