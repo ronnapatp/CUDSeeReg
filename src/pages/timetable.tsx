@@ -28,18 +28,30 @@ export default function Timetable() {
             <option value="2nor">ม.2 ธรรมดา</option>
             <option value="3ep">ม.3 EP</option>
             <option value="3nor">ม.3 ธรรมดา</option>
-            <option value="4epmil">ม.4 EP ช่วงรด.</option>
-            <option value="4epnotmil">ม.4 EP ช่วงปกติ</option>
-            <option value="4normil">ม.4 ธรรมดา ช่วงรด.</option>
-            <option value="4nornotmil">ม.4 ธรรมดา ช่วงปกติ</option>
-            <option value="5epmil">ม.5 EP ช่วงรด.</option>
-            <option value="5epnotmil">ม.5 EP ช่วงปกติ</option>
-            <option value="5normil">ม.5 ธรรมดา ช่วงรด.</option>
-            <option value="5nornotmil">ม.5 ธรรมดา ช่วงปกติ</option>
-            <option value="6epmil">ม.6 EP ช่วงรด.</option>
-            <option value="6epnotmil">ม.6 EP ช่วงปกติ</option>
-            <option value="6normil">ม.6 ธรรมดา ช่วงรด.</option>
-            <option value="6nornotmil">ม.6 ธรรมดา ช่วงปกติ</option>
+            <option value="4epmilsci">ม.4 EP ช่วงรด. (วิทย์)</option>
+            <option value="4epmilart">ม.4 EP ช่วงรด. (ศิลป์)</option>
+            <option value="4epnotmilsci">ม.4 EP ช่วงปกติ (วิทย์)</option>
+            <option value="4epnotmilart">ม.4 EP ช่วงปกติ (ศิลป์)</option>
+            <option value="4normilsci">ม.4 ธรรมดา ช่วงรด. (วิทย์)</option>
+            <option value="4normilart">ม.4 ธรรมดา ช่วงรด. (ศิลป์)</option>
+            <option value="4nornotmilsci">ม.4 ธรรมดา ช่วงปกติ (วิทย์)</option>
+            <option value="4nornotmilart">ม.4 ธรรมดา ช่วงปกติ (ศิลป์)</option>
+            <option value="5epmilsci">ม.5 EP ช่วงรด. (วิทย์)</option>
+            <option value="5epmilart">ม.5 EP ช่วงรด. (ศิลป์)</option>
+            <option value="5epnotmilsci">ม.5 EP ช่วงปกติ (วิทย์)</option>
+            <option value="5epnotmilart">ม.5 EP ช่วงปกติ (ศิลป์)</option>
+            <option value="5normilsci">ม.5 ธรรมดา ช่วงรด. (วิทย์)</option>
+            <option value="5normilart">ม.5 ธรรมดา ช่วงรด. (ศิลป์)</option>
+            <option value="5nornotmilsci">ม.5 ธรรมดา ช่วงปกติ (วิทย์)</option>
+            <option value="5nornotmilart">ม.5 ธรรมดา ช่วงปกติ (ศิลป์)</option>
+            <option value="6epmilsci">ม.6 EP ช่วงรด. (วิทย์)</option>
+            <option value="6epmilart">ม.6 EP ช่วงรด. (ศิลป์)</option>
+            <option value="6epnotmilsci">ม.6 EP ช่วงปกติ (วิทย์)</option>
+            <option value="6epnotmilart">ม.6 EP ช่วงปกติ (ศิลป์)</option>
+            <option value="6normilsci">ม.6 ธรรมดา ช่วงรด. (วิทย์)</option>
+            <option value="6normilart">ม.6 ธรรมดา ช่วงรด. (ศิลป์)</option>
+            <option value="6nornotmilsci">ม.6 ธรรมดา ช่วงปกติ (วิทย์)</option>
+            <option value="6nornotmilart">ม.6 ธรรมดา ช่วงปกติ (ศิลป์)</option>
           </select>
         </div>
 
