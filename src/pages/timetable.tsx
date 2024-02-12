@@ -42,14 +42,14 @@ export default function Timetable() {
             <option value="5normilart">ม.5 ธรรมดา ช่วงรด. (ศิลป์)</option>
             <option value="5nornotmilsci">ม.5 ธรรมดา ช่วงปกติ (วิทย์)</option>
             <option value="5nornotmilart">ม.5 ธรรมดา ช่วงปกติ (ศิลป์)</option>
-            <option value="6epmilsci">ม.6 EP ช่วงรด. (วิทย์)</option>
+            {/* <option value="6epmilsci">ม.6 EP ช่วงรด. (วิทย์)</option>
             <option value="6epmilart">ม.6 EP ช่วงรด. (ศิลป์)</option>
             <option value="6epnotmilsci">ม.6 EP ช่วงปกติ (วิทย์)</option>
             <option value="6epnotmilart">ม.6 EP ช่วงปกติ (ศิลป์)</option>
             <option value="6normilsci">ม.6 ธรรมดา ช่วงรด. (วิทย์)</option>
             <option value="6normilart">ม.6 ธรรมดา ช่วงรด. (ศิลป์)</option>
             <option value="6nornotmilsci">ม.6 ธรรมดา ช่วงปกติ (วิทย์)</option>
-            <option value="6nornotmilart">ม.6 ธรรมดา ช่วงปกติ (ศิลป์)</option>
+            <option value="6nornotmilart">ม.6 ธรรมดา ช่วงปกติ (ศิลป์)</option> */}
           </select>
         </div>
 
