@@ -58,6 +58,17 @@ export default function Timetable() {
           <TableComponent />
         </div>
 
+        <div className="mt-5">
+          หมายเหตุ :
+        </div>
+        <span className="inline-flex">
+          <div className='p-4 bg-emerald-500 w-10 mr-2'></div>
+          คือวันที่เรียนรด.
+        </span>
+        <br/>
+        และสีตามอ่อนๆตามสีวันคือคาบเลือกเสรี
+
+
       </div>
     </Container>
   )
